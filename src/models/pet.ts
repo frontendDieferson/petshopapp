@@ -139,12 +139,8 @@ export const Pets = {
         return data.filter(item => item.type === type)
     },
     getFromName: (name: string): Pet[] => {
-        return data.filter(item => {
-            if(item.name.toLowerCase().indexOf(name.toLowerCase()) > -1) {
-                return true
-            } else {
-                false
-            }
-        })
+        return data.filter(item => 
+            item.name.toLowerCase().indexOf(name.toLowerCase()) > -1
+        )
     }
 }
