@@ -131,7 +131,7 @@ const data: Pet[] = [
 ]
 
 
-export const Pets = {
+export const Pet = {
     getAll: (): Pet[] => {
         return data
     },
